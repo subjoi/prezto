@@ -6,8 +6,28 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME}/zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+
+#
+# Aliases
+#
+
+#configs
+alias bspwmrc="nvim ~/.config/bspwm/bspwmrc"
+alias sxhkdrc="nvim ~/.config/sxhkd/sxhkdrc"
+alias kittyrc="nvim ~/.config/kitty/kitty.conf"
+alias polybarrc="nvim ~/.config/polybar/polybar.ini"
+alias {nvimrc,vimrc}="nvim ~/.config/nvim/init.vim"
+alias picomrc="nvim ~/.config/picom/picom.conf"
+
+#dirs
+alias configs="cd ~/.config"
+alias {dev,projects,prx}="cd ~/Documents/projects"
+alias dropbox="cd ~/Dropbox"
+alias {wallpapes,papes}="cd ~/Dropbox/Wallpaper"
+alias {wmdir,bspwmdir}="cd ~/.config/bspwmrc"
