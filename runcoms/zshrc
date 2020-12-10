@@ -12,6 +12,8 @@ fi
 
 # Customize to your needs...
 
+# Dotfiles management alias
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #
 # Aliases
