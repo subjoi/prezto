@@ -16,7 +16,7 @@ source ~/docs/zsh/aliases.zsh
 
 ## Config aliases
 alias swayconf="nvim ~/.config/sway/config"
-alias kittyconf="kitty/kitty.conf"
+alias kittyconf="nvim ~/.config/kitty/kitty.conf"
 alias barconf="ranger ~/.config/sway/bars/"
 
 ## cd aliases
