@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 #
+source ~/docs/zsh/aliases.zsh
 
 ## Config aliases
 alias swayconf="nvim ~/.config/sway/config"
