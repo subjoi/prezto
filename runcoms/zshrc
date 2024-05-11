@@ -11,3 +11,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+#
+
+## Config aliases
+alias swayconf="nvim ~/.config/sway/config"
+alias kittyconf="kitty/kitty.conf"
+alias barconf="ranger ~/.config/sway/bars/"
+
+## cd aliases
+alias bins="cd ~/.local/bin/"
+alias wmd="cd ~/.config/sway/"
+
+## cmds
+alias sctl="systemctl"
+alias vpn="mullvad"
+alias smarts="smartthings"
+alias fetch="fastfetch"
