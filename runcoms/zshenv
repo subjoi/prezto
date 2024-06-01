@@ -17,6 +17,7 @@ export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export LIBVA_DRIVER_NAME=nvidia
 export XDG_SESSION_TYPE=wayland
 export NVD_BACKEND=direct
+export XDG_CURRENT_DESKTOP=sway
 
 # xdg dir stuff
 export XDG_DATA_HOME=$HOME/.local/share
@@ -33,7 +34,8 @@ export GOPATH="$XDG_DATA_HOME"/go
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
 
-
+#wayland stuff
+export ELECTRON_OZONE_PLATFORM_HINT=auto
 export MOZ_ENABLE_WAYLAND=1
 
 export QT_QPA_PLATFORMTHEME=qt6ct
