@@ -18,14 +18,14 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='nvim'
+  export EDITOR='lvim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='nvim'
+  export VISUAL='lvim'
 fi
-if [[ -z "$PAGER" ]]; then
-  export PAGER='less'
-fi
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-P -c"
 
 #
 # Language
@@ -51,6 +51,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   $HOME/{,s}bin(N)
   $HOME/.local/bin(N)
+  $HOME/.config/sway/scripts(N)
   $HOME/.local/share/cargo/bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
