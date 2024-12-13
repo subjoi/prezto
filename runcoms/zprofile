@@ -24,8 +24,8 @@ if [[ -z "$VISUAL" ]]; then
   export VISUAL='lvim'
 fi
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANROFFOPT="-P -c"
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+#export MANROFFOPT="-P -c"
 
 #
 # Language

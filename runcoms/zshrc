@@ -11,6 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+source $HOME/.config/zsh/rose-pine-man/rose-pine-man.zsh
+source $HOME/.profile
+
 #
 alias sensii="TERM=xterm kitten ${sshSecret}"
 ## Config aliases
