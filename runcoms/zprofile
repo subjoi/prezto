@@ -1,22 +1,9 @@
-#
-# Executes commands at login pre-zshrc.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-#
 # Browser
-#
-
 if [[ -z "$BROWSER" && "$OSTYPE" == darwin* ]]; then
   export BROWSER='w3m'
 fi
 
-#
 # Editors
-#
-
 if [[ -z "$EDITOR" ]]; then
   export EDITOR='lvim'
 fi
@@ -24,20 +11,14 @@ if [[ -z "$VISUAL" ]]; then
   export VISUAL='lvim'
 fi
 
-#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-#export MANROFFOPT="-P -c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-P -c"
 
 #
 # Language
-#
-
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
-
-#
-# Paths
-#
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
@@ -60,8 +41,6 @@ path=(
 
 #
 # Less
-#
-
 # Set the default Less options.
 if [[ -z "$LESS" ]]; then
   export LESS='-g -i -M -R -S -w -z-4 --use-color -Dd+r$Du+b$'

@@ -20,8 +20,12 @@ source $HOME/.config/zsh/rose-pine-man/rose-pine-man.zsh
 source $HOME/.profile
 
 #
-alias sensii="kitten ${sshSecret}"
+alias sensivps="kitten ssh ${sensisecret}"
+alias nimdavps="kitten ssh ${nimdasecret}"
+alias linevps="kitten ssh ${linesecret}"
+
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
 ## Config aliases
 alias swayconf="${EDITOR} ~/.config/sway/config"
 alias kittyconf="${EDITOR} ~/.config/kitty/kitty.conf"
@@ -33,6 +37,7 @@ alias wmd="cd ~/.config/sway/"
 
 ## cmds
 alias sctl="sudo systemctl"
+alias uctl="systemctl --user"
 alias vpn="mullvad"
 alias smarts="smartthings"
 alias fetch="fastfetch --config ~/.config/fastfetch/hw-sw-info.jsonc"
@@ -43,5 +48,6 @@ alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias obs="obs --enable-features=WebRTCPipeWireCapturer"
 alias btctl="bluetoothctl"
+alias bootlog="sudo journalctl -b | grep -v warp | less"
 
 
