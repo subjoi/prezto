@@ -23,7 +23,6 @@ source $HOME/.profile
 alias sensivps="kitten ssh ${sensisecret}"
 alias nimdavps="kitten ssh ${nimdasecret}"
 alias linevps="kitten ssh ${linesecret}"
-
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 ## Config aliases
@@ -40,7 +39,7 @@ alias sctl="sudo systemctl"
 alias uctl="systemctl --user"
 alias vpn="mullvad"
 alias smarts="smartthings"
-alias fetch="fastfetch --config ~/.config/fastfetch/hw-sw-info.jsonc"
+alias fetch="fastfetch --config ~/.config/fastfetch/config.jsonc"
 alias ls="eza"
 alias dmesg="dmesg --color=always"
 alias reflect-mirrors="sudo reflector --save /etc/pacman.d/mirrorlist --sort rate --protocol https --age 12 --latest 10 -c DE,SE,DK,NO,NL"
