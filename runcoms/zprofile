@@ -18,10 +18,10 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='lvim'
+  export EDITOR='vim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='lvim'
+  export VISUAL='vim'
 fi
 
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
