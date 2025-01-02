@@ -20,6 +20,7 @@ source $HOME/.config/zsh/rose-pine-man/rose-pine-man.zsh
 source $HOME/.profile
 
 #
+alias pivps="kitten ssh ${pisecret}"
 alias sensivps="kitten ssh ${sensisecret}"
 alias nimdavps="kitten ssh ${nimdasecret}"
 alias linevps="kitten ssh ${linesecret}"
@@ -43,7 +44,7 @@ alias fetch="fastfetch --config ~/.config/fastfetch/config.jsonc"
 alias ls="eza"
 alias dmesg="dmesg --color=always"
 alias reflect-mirrors="sudo reflector --save /etc/pacman.d/mirrorlist --sort rate --protocol https --age 12 --latest 10 -c DE,SE,DK,NO,NL"
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias obs="obs --enable-features=WebRTCPipeWireCapturer"
 alias btctl="bluetoothctl"
