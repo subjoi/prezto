@@ -40,7 +40,9 @@ path=(
   $path
 )
 
-#
+# Grep
+export GREP_COLORS='ms=30;46:mt=30;46:mc=30;46:sl=30;46:cx=30;46:fn=35:ln=32:bn=32:se=36'
+
 # Less
 # Set the default Less options.
 if [[ -z "$LESS" ]]; then

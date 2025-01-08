@@ -38,10 +38,12 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'history' \
   'history-substring-search' \
   'autosuggestions' \
   'completion' \
   'prompt' \
+  'command-not-found' \
   'directory'
 
 #
@@ -64,7 +66,7 @@ zstyle ':prezto:module:autosuggestions:color' found 'yes'
 #
 
 # Set the characters that are considered to be part of a word.
-# zstyle ':prezto:module:editor' wordchars '*?_-.[]~&;!#$%^(){}<>'
+zstyle ':prezto:module:editor' wordchars '*?_-.[]~&;!#$%^(){}<>'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
@@ -101,6 +103,8 @@ zstyle ':prezto:module:history' histsize 10000
 
 # Set the maximum number of history events to save in the history file.
 zstyle ':prezto:module:history' savehist 10000
+
+zstyle ':prezto:module:history:alias' skip 'yes'
 
 #
 # History Substring Search

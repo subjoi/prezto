@@ -20,10 +20,10 @@ source $HOME/.config/zsh/rose-pine-man/rose-pine-man.zsh
 source $HOME/.profile
 
 #
-alias pivps="kitten ssh ${pisecret}"
-alias sensivps="kitten ssh ${sensisecret}"
-alias nimdavps="kitten ssh ${nimdasecret}"
-alias linevps="kitten ssh ${linesecret}"
+alias pivps="ssh ${pisecret}"
+alias sensivps="ssh ${sensisecret}"
+alias nimdavps="ssh ${nimdasecret}"
+alias linevps="ssh ${linesecret}"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 ## Config aliases
@@ -50,3 +50,4 @@ alias obs="obs --enable-features=WebRTCPipeWireCapturer"
 alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias ssh-agent-cyg="eval $(ssh-agent)"
+alias tree="tree --dirsfirst -C -L 3"
