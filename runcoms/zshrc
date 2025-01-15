@@ -21,11 +21,9 @@ alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias sctl="sudo systemctl"
 alias smarts="smartthings"
 alias fetch="fastfetch --config ~/.config/fastfetch/hw-sw-info.jsonc"
-alias ls="eza"
+alias ls="eza --group-directories-first"
 alias dmesg="dmesg --color=always"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
 alias obs="obs --enable-features=WebRTCPipeWireCapturer"
 alias btctl="bluetoothctl"
-
-

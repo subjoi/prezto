@@ -18,14 +18,14 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='vim'
+  export EDITOR='lvim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='vim'
+  export VISUAL='lvim'
 fi
 
-#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-#export MANROFFOPT="-P -c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-P -c"
 
 #
 # Language
@@ -54,6 +54,7 @@ path=(
   $HOME/.config/sway/scripts(N)
   $HOME/.local/share/cargo/bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
+  /usr/local/go/bin(N)
   /usr/local/{,s}bin(N)
   $path
 )
