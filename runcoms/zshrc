@@ -24,6 +24,7 @@ alias pivps="ssh ${pisecret}"
 alias sensivps="ssh ${sensisecret}"
 alias nimdavps="ssh ${nimdasecret}"
 alias linevps="ssh ${linesecret}"
+alias subbivps="ssh ${subbisecret}"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 ## Config aliases
@@ -51,3 +52,4 @@ alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias ssh-agent-cyg="eval $(ssh-agent)"
 alias tree="tree --dirsfirst -C -L 3"
+alias ubad="curl -Fsecret= u-b.ad -F"
