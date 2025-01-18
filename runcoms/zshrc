@@ -22,7 +22,6 @@ alias sctl="sudo systemctl"
 alias uctö "systemctl --user"
 alias smarts="smartthings"
 alias fetch="fastfetch --config ~/.config/fastfetch/hw-sw-info.jsonc"
-<<<<<<< HEAD
 alias ls="eza --group--directories-first"
 alias reflect-mirrors="sudo reflector --save /etc/pacman.d/mirrorlist --sort rate --protocol https --age 12 --latest 10 -c DE,SE,DK,NO,NL"
 alias dmesg="dmesg --color=always"
@@ -30,14 +29,3 @@ alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias tree="tree --dirsfirst -C -L 3"
 alias ubad="curl -Fsecret= u-b.ad -F"
-
-
-
-=======
-alias ls="eza --group-directories-first"
-alias dmesg="dmesg --color=always"
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias adb='HOME="$XDG_DATA_HOME"/android adb'
-alias obs="obs --enable-features=WebRTCPipeWireCapturer"
-alias btctl="bluetoothctl"
->>>>>>> 079ef5d54cdf4dc9aec3bdc245ebe94271138c11
