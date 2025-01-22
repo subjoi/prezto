@@ -56,3 +56,11 @@ if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 eval $(smartthings autocomplete:script zsh)
+XDG_DOCUMENTS_DIR="$HOME/docs"
+XDG_DESKTOP_DIR="$XDG_DOCUMENTS_DIR/Desktop"
+XDG_DOWNLOAD_DIR="$XDG_DOCUMENTS_DIR/downloads"
+XDG_TEMPLATES_DIR="$XDG_DOCUMENTS_DIR/Templates"
+XDG_PUBLICSHARE_DIR="$XDG_DOCUMENTS_DIR/Public"
+XDG_MUSIC_DIR="$XDG_DOCUMENTS_DIR/music"
+XDG_PICTURES_DIR="$XDG_DOCUMENTS_DIR/pics"
+XDG_VIDEOS_DIR="$XDG_DOCUMENTS_DIR/vids"

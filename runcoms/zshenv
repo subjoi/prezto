@@ -16,6 +16,12 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
+export XDG_DOCUMENTS_DIR="$HOME/docs"
+export XDG_DOWNLOAD_DIR="$XDG_DOCUMENTS_DIR/downloads"
+export XDG_MUSIC_DIR="$XDG_DOCUMENTS_DIR/music"
+export XDG_PICTURES_DIR="$XDG_DOCUMENTS_DIR/pics"
+export XDG_VIDEOS_DIR="$XDG_DOCUMENTS_DIR/vids"
+
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 export W3M_DIR="$XDG_DATA_HOME"/w3m
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
