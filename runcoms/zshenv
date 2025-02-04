@@ -36,4 +36,9 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 export GRIM_DEFAULT_DIR="$HOME"/pics/screens
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/
 
+# Zoxide vars
+export _ZO_DATA_DIR=$XDG_DATA_HOME/zoxide
+export _ZO_ECHO=1
+export _ZO_RESOLVE_SYMLINKS=1
+
 

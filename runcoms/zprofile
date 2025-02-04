@@ -4,22 +4,17 @@ if [[ -z "$BROWSER" && "$OSTYPE" == darwin* ]]; then
 fi
 
 # Editors
-if [[ -z "$EDITOR" ]]; then
-  export EDITOR='lvim'
-fi
-if [[ -z "$VISUAL" ]]; then
-  export VISUAL='lvim'
-fi
+export EDITOR='lvim'
+export VISUAL='lvim'
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-P -c"
+export GREP_COLORS='ms=30;46:mt=30;46:mc=30;46:sl=30;46:cx=30;46:fn=35:ln=32:bn=32:se=36'
 
 export ALSA_CONFIG_PATH=/usr/share/alsa/alsa.conf:$HOME/.asoundrc-default
 #
 # Language
-if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
-fi
+export LANG='en_US.UTF-8'
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
@@ -28,6 +23,11 @@ typeset -gU cdpath fpath mailpath path
 # cdpath=(
 #   $cdpath
 # )
+
+fpath=(
+  $HOME/.zprezto/comps-contrib
+  $fpath
+)
 
 # Set the list of directories that Zsh searches for programs.
 path=(
@@ -39,9 +39,6 @@ path=(
   /usr/local/{,s}bin(N)
   $path
 )
-
-# Grep
-export GREP_COLORS='ms=30;46:mt=30;46:mc=30;46:sl=30;46:cx=30;46:fn=35:ln=32:bn=32:se=36'
 
 # Less
 # Set the default Less options.
@@ -56,11 +53,3 @@ if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 eval $(smartthings autocomplete:script zsh)
-XDG_DOCUMENTS_DIR="$HOME/docs"
-XDG_DESKTOP_DIR="$XDG_DOCUMENTS_DIR/Desktop"
-XDG_DOWNLOAD_DIR="$XDG_DOCUMENTS_DIR/downloads"
-XDG_TEMPLATES_DIR="$XDG_DOCUMENTS_DIR/Templates"
-XDG_PUBLICSHARE_DIR="$XDG_DOCUMENTS_DIR/Public"
-XDG_MUSIC_DIR="$XDG_DOCUMENTS_DIR/music"
-XDG_PICTURES_DIR="$XDG_DOCUMENTS_DIR/pics"
-XDG_VIDEOS_DIR="$XDG_DOCUMENTS_DIR/vids"

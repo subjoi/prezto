@@ -10,6 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Source zoxide
+eval "$(zoxide init zsh)"
+
 # Customize to your needs...
 #
 export PYENV_ROOT="$HOME/.pyenv"
@@ -52,5 +55,7 @@ alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias ssh-agent-cyg="eval $(ssh-agent)"
 alias tree="tree --dirsfirst -C -L 3"
-alias ubad="curl -Fsecret= u-b.ad -F"
+alias ubad="curl -Fsecret= https://u-b.ad -F"
+alias ubadurl='curl https://u-b.ad -F'
 alias swaytree="swaymsg -t get_tree -p | grep -A 10"
+alias grep="rg"
