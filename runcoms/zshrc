@@ -15,9 +15,6 @@ eval "$(zoxide init zsh)"
 
 # Customize to your needs...
 #
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 source $HOME/.config/zsh/rose-pine-man/rose-pine-man.zsh
 source $HOME/.profile
@@ -28,6 +25,7 @@ alias sensivps="ssh ${sensisecret}"
 alias nimdavps="ssh ${nimdasecret}"
 alias linevps="ssh ${linesecret}"
 alias subbivps="ssh ${subbisecret}"
+alias blakevps="ssh ${blakesecret}"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 ## Config aliases
@@ -55,7 +53,7 @@ alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias ssh-agent-cyg="eval $(ssh-agent)"
 alias tree="tree --dirsfirst -C -L 3"
-alias ubad="curl -Fsecret= https://u-b.ad -F"
-alias ubadurl='curl https://u-b.ad -F'
+alias ubad="curl -Fsecret= https://u-b.ad"
+alias ubadurl='curl https://u-b.ad'
 alias swaytree="swaymsg -t get_tree -p | grep -A 10"
 alias grep="rg"

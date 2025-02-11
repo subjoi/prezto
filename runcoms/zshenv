@@ -41,4 +41,10 @@ export _ZO_DATA_DIR=$XDG_DATA_HOME/zoxide
 export _ZO_ECHO=1
 export _ZO_RESOLVE_SYMLINKS=1
 
-
+# Colors. Annoying having to go into config files to get them.
+export BG='#191724'
+export FG='#E0DEF4'
+export BLACK='#26233A'
+export RED='#9CCFD8'
+export GREEN='#F6C177'
+export BLUE='#C4A7E7'
