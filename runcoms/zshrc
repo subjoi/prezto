@@ -41,9 +41,9 @@ alias vpn="mullvad"
 alias fetch="fastfetch --config ~/.config/fastfetch/config.jsonc"
 alias ls="eza --group-directories-first"
 alias dmesg="dmesg --color=always"
-alias reflect-mirrors="sudo reflector --save /etc/pacman.d/mirrorlist --sort rate --protocol https --age 12 --latest 10 -c DE,SE,DK,NO,NL"
-alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
-alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias mirrors-fresh="sudo reflector --save /etc/pacman.d/mirrorlist --sort rate --protocol https --age 12 --latest 10 -c DE,SE,DK,NO,NL"
+alias wget="wget --hsts-file=${XDG_DATA_HOME:-$HOME/.local/share}/wget-hsts"
+alias adb='env HOME="${XDG_DATA_HOME:-$HOME/.local/share}/android" adb'
 alias obs="obs --enable-features=WebRTCPipeWireCapturer"
 alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
