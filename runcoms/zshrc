@@ -22,9 +22,6 @@ source $HOME/.profile
 #
 alias pivps="ssh ${pisecret}"
 alias sensivps="ssh ${sensisecret}"
-alias nimdavps="ssh ${nimdasecret}"
-alias linevps="ssh ${linesecret}"
-alias subbivps="ssh ${subbisecret}"
 alias blakevps="ssh ${blakesecret}"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
@@ -41,7 +38,6 @@ alias wmd="cd ~/.config/sway/"
 alias sctl="sudo systemctl"
 alias uctl="systemctl --user"
 alias vpn="mullvad"
-alias st="smartthings"
 alias fetch="fastfetch --config ~/.config/fastfetch/config.jsonc"
 alias ls="eza --group-directories-first"
 alias dmesg="dmesg --color=always"
@@ -53,7 +49,5 @@ alias btctl="bluetoothctl"
 alias bootlog="sudo journalctl -b | grep -v warp | less"
 alias ssh-agent-cyg="eval $(ssh-agent)"
 alias tree="tree --dirsfirst -C -L 3"
-alias ubad="curl -Fsecret= https://u-b.ad"
-alias ubadurl='curl https://u-b.ad'
-alias swaytree="swaymsg -t get_tree -p | grep -A 10"
 alias grep="rg"
+alias speakers="btctl connect F8:5C:7E:D4:18:E5"
