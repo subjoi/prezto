@@ -11,19 +11,32 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-#
-## Config aliases
 
-## cd aliases
-alias nginxdir="cd /etc/nginx/"
+source "$HOME/.zprezto-contrib/tailscale.zsh"
 
 ## cmds
 alias sctl="sudo systemctl"
-alias uctl="systemctl --user"
+alias uctl "systemctl --user"
+#alias ls="eza --group-directories-first"
 alias dmesg="dmesg --color=always"
 alias wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
-alias bootlog="sudo journalctl -b | grep -v warp | less"
+alias bootlog="journalctl -b | grep -v UFW"
 alias tree="tree --dirsfirst -C -L 3"
 alias ubad="curl -Fsecret= u-b.ad -F"
 
 eval "$(ntfy shell-integration)"
+alias du="duf"
+
+source "$HOME/.config/broot/launcher/bash/br"
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
